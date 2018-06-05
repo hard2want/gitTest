@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonLabel.text = "Press Me"
+        buttonLabel.text = "Press The Button"
     }
 
     override func didReceiveMemoryWarning() {
