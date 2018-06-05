@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var pressed = false
+    var pressed2 = false
     
     
     @IBAction func buttonOne(_ sender: UIButton) {
@@ -23,6 +24,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func buttonTwo(_ sender: UIButton) {
+        pressed2 = !pressed2
+        if pressed2 {
+        buttonLabel.backgroundColor = .red
+        }
+        else {
+            buttonLabel.backgroundColor = .white
+        }
+    }
     
     @IBOutlet weak var buttonLabel: UILabel!
     
