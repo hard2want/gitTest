@@ -10,9 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var pressed = false
+    
+    
+    @IBAction func buttonOne(_ sender: UIButton) {
+        pressed = !pressed
+        if pressed {
+            buttonLabel.text = "Button Pressed"
+        }
+        else {
+            buttonLabel.text = "Press Button"
+        }
+    }
+    
+    
+    @IBOutlet weak var buttonLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        buttonLabel.text = "Press Me"
     }
 
     override func didReceiveMemoryWarning() {
